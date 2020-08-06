@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2B0A5B406F1D09FF12807940 /* Pods_ARMeasure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6364F8D9426ECE37CD4F2A8E /* Pods_ARMeasure.framework */; };
+		8D54E2CB24D9168700E6A475 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D54E2CA24D9168700E6A475 /* ViewModel.swift */; };
+		8D54E2CD24D916A700E6A475 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D54E2CC24D916A700E6A475 /* Model.swift */; };
+		8D54E2CF24D94A7E00E6A475 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D54E2CE24D94A7E00E6A475 /* Extensions.swift */; };
 		8DF55C7324D911C900479549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF55C7224D911C900479549 /* AppDelegate.swift */; };
 		8DF55C7524D911CA00479549 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF55C7424D911CA00479549 /* art.scnassets */; };
 		8DF55C7724D911CA00479549 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF55C7624D911CA00479549 /* ViewController.swift */; };
@@ -19,6 +22,9 @@
 /* Begin PBXFileReference section */
 		0B4585298086BCEF77D1C8D7 /* Pods-ARMeasure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARMeasure.debug.xcconfig"; path = "Target Support Files/Pods-ARMeasure/Pods-ARMeasure.debug.xcconfig"; sourceTree = "<group>"; };
 		6364F8D9426ECE37CD4F2A8E /* Pods_ARMeasure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARMeasure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D54E2CA24D9168700E6A475 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8D54E2CC24D916A700E6A475 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8D54E2CE24D94A7E00E6A475 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8DF55C6F24D911C900479549 /* ARMeasure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARMeasure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF55C7224D911C900479549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DF55C7424D911CA00479549 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -48,7 +54,6 @@
 				0B4585298086BCEF77D1C8D7 /* Pods-ARMeasure.debug.xcconfig */,
 				AE4CA0C18B7E75189A36945D /* Pods-ARMeasure.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				8DF55C7224D911C900479549 /* AppDelegate.swift */,
+				8D54E2CE24D94A7E00E6A475 /* Extensions.swift */,
 				8DF55C8824D9122600479549 /* Model */,
 				8DF55C8724D9122100479549 /* ViewModel */,
 				8DF55C8624D9121800479549 /* View */,
@@ -105,6 +111,7 @@
 		8DF55C8724D9122100479549 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8D54E2CA24D9168700E6A475 /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -112,6 +119,7 @@
 		8DF55C8824D9122600479549 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8D54E2CC24D916A700E6A475 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -232,8 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D54E2CF24D94A7E00E6A475 /* Extensions.swift in Sources */,
 				8DF55C7724D911CA00479549 /* ViewController.swift in Sources */,
+				8D54E2CB24D9168700E6A475 /* ViewModel.swift in Sources */,
 				8DF55C7324D911C900479549 /* AppDelegate.swift in Sources */,
+				8D54E2CD24D916A700E6A475 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
